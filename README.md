@@ -28,6 +28,16 @@ pip install gymnasium stable-baselines3 shimmy pygame tensorboard
 
 *(Notă: `shimmy` poate fi necesar pentru compatibilitatea între anumite versiuni de gym/gymnasium).*
 
+## Joc Manual
+
+Puteți încerca jocul chiar dumneavoastră! Pentru a juca manual, rulați scriptul mediului:
+
+```bash
+python chicken_env.py
+```
+
+**Controale:** Folosiți săgețile de la tastatură pentru a vă deplasa.
+
 ## Cum se utilizează
 
 ### 1. Antrenarea unui agent
@@ -42,7 +52,9 @@ Acesta va începe procesul de învățare și va salva modelul în folderul `mod
 
 ### 2. Testarea unui agent
 
-După ce aveți un model antrenat (ex: `models/ppo_chicken.zip`), îl puteți vedea în acțiune rulând scriptul de test corespunzător:
+**Notă:** Proiectul include deja modele pre-antrenate pentru fiecare algoritm în folderul `models/`. Puteți testa direct performanța acestora fără a fi nevoie să rulați antrenamentul de la zero.
+
+Pentru a vedea un agent în acțiune (de exemplu, PPO), rulați scriptul de test corespunzător:
 
 ```bash
 python test_ppo.py
